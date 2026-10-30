@@ -1,0 +1,266 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8ee;
+    color: #402015;
+}
+
+.navbar {
+    background: #502314;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 25px;
+    color: #ffb000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 45px 15px;
+    background: #f7a928;
+    color: #502314;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 290px minmax(0, 1fr);
+    gap: 25px;
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 0 20px;
+    align-items: start;
+}
+
+.sidebar {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.sidebar h2 {
+    font-size: 19px;
+    margin-bottom: 15px;
+    color: #8b321d;
+}
+
+input, select, textarea {
+    display: block;
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 12px;
+    border: 1px solid #d8c8ba;
+    border-radius: 6px;
+    font: inherit;
+    background: white;
+}
+
+textarea {
+    min-height: 75px;
+    resize: vertical;
+}
+
+button {
+    padding: 11px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #d62300;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #a91b00;
+}
+
+.sidebar button {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.sidebar hr {
+    border: 0;
+    border-top: 1px solid #eee0d4;
+    margin: 22px 0;
+}
+
+.main-content h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.search-box select {
+    width: 150px;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 130px;
+}
+
+.search-box select,
+.search-box input,
+.search-box button {
+    margin-bottom: 0;
+}
+
+#reset-search {
+    background: #502314;
+}
+
+#food-count {
+    margin: 15px 0;
+    color: #765748;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.food-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px #50231416;
+    border: 1px solid #f0e4d9;
+}
+
+.food-card img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    background: #f3e6d7;
+}
+
+.food-info {
+    padding: 16px;
+}
+
+.food-info h3 {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.category {
+    display: inline-block;
+    background: #fff0d2;
+    color: #8b321d;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 21px;
+    color: #c52200;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.description {
+    color: #6e625b;
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 42px;
+    overflow-wrap: anywhere;
+}
+
+.card-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.card-actions button {
+    flex: 1;
+    padding: 9px 5px;
+}
+
+.edit-btn {
+    background: #f2a900;
+    color: #402015;
+}
+
+.edit-btn:hover {
+    background: #d18f00;
+}
+
+.delete-btn {
+    background: #502314;
+}
+
+.empty-message {
+    grid-column: 1 / -1;
+    padding: 30px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 1050px) {
+    .card-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 750px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .card-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .navbar h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-list {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .search-box > * {
+        width: 100% !important;
+    }
+}

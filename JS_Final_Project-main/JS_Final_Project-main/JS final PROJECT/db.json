@@ -1,0 +1,44 @@
+{
+  "foods": [
+    {
+      "title": "Crispy Fries",
+      "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600",
+      "category": "Sides",
+      "price": 99,
+      "description": "Golden crispy potato fries",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "title": "Cold Drink",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZKPRoV3NEGzaBRXkCHKKoAICjM1_jWtPrGswneqdxlA&s=10",
+      "category": "Drinks",
+      "price": 79,
+      "description": "A refreshing cold drink"
+    },
+    {
+      "id": "4",
+      "title": "Chocolate Dessert",
+      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600",
+      "category": "Desserts",
+      "price": 129,
+      "description": "A sweet chocolate treat"
+    },
+    {
+      "title": "Peri Peri Fries",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV8UJifRxodQB4bTc2bA2NLLdExOkxP7_lNJXntYXSDA&s=10",
+      "category": "Sides",
+      "price": 79,
+      "description": "hot and spicy potato fries- ",
+      "id": "5"
+    },
+    {
+      "id": "8",
+      "title": "Choco Lava Cake",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH0BF9joTxB42Vt6pwri3xVdQluKEOkikaZajsWH3Nng&s=10",
+      "category": "Desserts",
+      "price": 50,
+      "description": ""
+    }
+  ]
+}

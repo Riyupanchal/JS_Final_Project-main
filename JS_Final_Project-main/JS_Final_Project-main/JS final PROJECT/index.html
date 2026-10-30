@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King | Food Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1>🍔 BURGER KING</h1>
+        <a href="#menu">Food Menu</a>
+    </nav>
+
+    <header class="hero">
+        <h2>Have It Your Way!</h2>
+        <p>Manage your favourite burgers, fries and drinks.</p>
+    </header>
+
+    <div class="container">
+
+        <aside class="sidebar">
+
+            <h2>Add Food</h2>
+
+           <input type="text" id="food-id" placeholder="Food ID">
+           <input type="text" id="food-title" placeholder="Food Name">
+           <input type="text" id="food-image" placeholder="Image URL">
+
+            
+            <select id="food-category">
+                <option value="">Select Category</option>
+                <option value="Burgers">Burgers</option>
+                <option value="Sides">Sides</option>
+                <option value="Drinks">Drinks</option>
+                <option value="Desserts">Desserts</option>
+            </select>
+
+            <input type="number" id="food-price" placeholder="Price (₹)" min="0">
+            <textarea id="food-description" placeholder="Food Description"></textarea>
+
+            <button id="add-food">Add Food</button>
+
+            <hr>
+
+            <h2>Update All Fields</h2>
+
+            <input type="number" id="update-food-id" placeholder="Food ID">
+            <input type="text" id="update-food-title" placeholder="New Food Name">
+            <input type="text" id="update-food-image" placeholder="New Image URL">
+
+            <select id="update-food-category">
+                <option value="">Select Category</option>
+                <option value="Burgers">Burgers</option>
+                <option value="Sides">Sides</option>
+                <option value="Drinks">Drinks</option>
+                <option value="Desserts">Desserts</option>
+            </select>
+
+            <input type="number" id="update-food-price" placeholder="New Price (₹)" min="0">
+            <textarea id="update-food-description" placeholder="New Description"></textarea>
+
+            <button id="update-food">Update Food</button>
+
+            <hr>
+
+            <h2>Update Only Price</h2>
+
+            <input type="number" id="update-price-food-id" placeholder="Food ID">
+            <input type="number" id="update-price-food-price" placeholder="New Price (₹)" min="0">
+            <button id="update-price-food">Update Price</button>
+
+            <hr>
+
+            <h2>Sort By Price</h2>
+            <button id="sort-low-to-high">Price: Low to High</button>
+            <button id="sort-high-to-low">Price: High to Low</button>
+
+            <hr>
+
+            <h2>Filter Category</h2>
+            <button class="filter-btn" data-category="All">All Food</button>
+            <button class="filter-btn" data-category="Burgers">Burgers</button>
+            <button class="filter-btn" data-category="Sides">Sides</button>
+            <button class="filter-btn" data-category="Drinks">Drinks</button>
+            <button class="filter-btn" data-category="Desserts">Desserts</button>
+
+        </aside>
+
+        <main class="main-content" id="menu">
+
+            <h2>Our Food Menu</h2>
+<!-- 
+            <div class="search-box">
+                <select id="search-by-select">
+                    <option value="title">Food Name</option>
+                    <option value="category">Category</option>
+                </select>
+
+                <input type="text" id="search-by-input"
+                       placeholder="Search food...">
+
+            </div> -->
+
+            <p id="food-count"></p>
+
+            <div class="card-list" id="data-list-wrapper">
+                <!-- Food cards will appear here -->
+            </div>
+
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
